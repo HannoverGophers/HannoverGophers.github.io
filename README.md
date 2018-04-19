@@ -1,8 +1,6 @@
-# HannoverJS Website
+# Hannover Gophers Website
 
-> The HannoverJS Website
-
-Powered by [Next.js](https://github.com/zeit/next.js/).
+> The Hannover Gophers Website
 
 ## Development
 
