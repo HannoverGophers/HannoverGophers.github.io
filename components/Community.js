@@ -19,12 +19,15 @@ export default ({ slack }) => (
         </a>
       </li>
       <li>
-        <a href="https://hannover-gophers.slack.com">
+        <a href="https://hannover-gophers.slack.com" target="_blank">
           <SlackLogo />
         </a>
       </li>
       <li>
-        <a href="https://www.meetup.com/de-DE/Hannover-Gophers/">
+        <a
+          href="https://www.meetup.com/de-DE/Hannover-Gophers/"
+          target="_blank"
+        >
           <MeetupLogo />
         </a>
       </li>
