@@ -27,8 +27,13 @@ export default ({
         </Underline>
       </h2>
     )}
+    {!Boolean(date) && (
+      <h2>
+        Next Meetup is <Underline>not</Underline> planned yet
+      </h2>
+    )}
     <Button href={meetupUrl} large>
-      RSVP & Join us on Meetup
+      {Boolean(date) ? 'RVSP & Join us on Meetup' : 'Join us on Meetup'}
     </Button>
     <style jsx>{`
       .root {

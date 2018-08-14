@@ -2,19 +2,31 @@ import React from 'react'
 import Button from './Button'
 import TwitterLogo from './TwitterLogo'
 import SlackLogo from './SlackLogo'
+import FaceBookLogo from './FaceBookLogo'
+import MeetupLogo from './MeetupLogo'
 
 export default ({ slack }) => (
   <React.Fragment>
     <ul className="root">
       <li>
-        <TwitterLogo />
-        <h3>Twitter</h3>
-        <Button href="https://twitter.com/HannoverGophers">Follow us</Button>
+        <a href="https://twitter.com/HannoverGophers" target="_blank">
+          <TwitterLogo />
+        </a>
       </li>
       <li>
-        <SlackLogo />
-        <h3>Slack</h3>
-        <Button href="https://hannover-gophers.slack.com">Join us</Button>
+        <a href="https://www.facebook.com/hannover.gophers/" target="_blank">
+          <FaceBookLogo />
+        </a>
+      </li>
+      <li>
+        <a href="https://hannover-gophers.slack.com">
+          <SlackLogo />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.meetup.com/de-DE/Hannover-Gophers/">
+          <MeetupLogo />
+        </a>
       </li>
       <style jsx>{`
         ul {
@@ -22,10 +34,17 @@ export default ({ slack }) => (
           list-style-type: none;
           margin: 0 auto;
           padding: 0;
-          width: 300px;
+          width: 500px;
         }
         li {
           flex: 1;
+        }
+        @media (max-width: 600px) {
+          ul {
+            width: auto;
+            justify-content: center;
+            flex-direction: column;
+          }
         }
       `}</style>
     </ul>
