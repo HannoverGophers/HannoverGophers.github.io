@@ -15,7 +15,10 @@
     "react-dom": "^16.2.0",
     "react-google-maps": "^9.4.5",
     "react-markdown": "^3.2.2",
-    "recompose": "^0.26.0"
+    "recompose": "^0.26.0",
+    "rxjs": "^6.3.3",
+    "rxjs-compat": "^6.3.3",
+    "upath": "^1.1.0"
   },
   "devDependencies": {
     "husky": "^0.14.3",

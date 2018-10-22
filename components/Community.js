@@ -1,11 +1,10 @@
 import React from 'react'
-import Button from './Button'
 import TwitterLogo from './TwitterLogo'
-import SlackLogo from './SlackLogo'
+import GitHubLogo from './GitHubLogo'
 import FaceBookLogo from './FaceBookLogo'
 import MeetupLogo from './MeetupLogo'
 
-export default ({ slack }) => (
+export default () => (
   <React.Fragment>
     <ul className="root">
       <li>
@@ -19,8 +18,8 @@ export default ({ slack }) => (
         </a>
       </li>
       <li>
-        <a href="https://hannover-gophers.slack.com" target="_blank">
-          <SlackLogo />
+        <a href="https://github.com/hannovergophers" target="_blank">
+          <GitHubLogo />
         </a>
       </li>
       <li>
@@ -38,6 +37,8 @@ export default ({ slack }) => (
           margin: 0 auto;
           padding: 0;
           width: 500px;
+          align-items: center;
+          justify-content: space-around;
         }
         li {
           flex: 1;
